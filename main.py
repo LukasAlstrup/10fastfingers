@@ -14,8 +14,11 @@ time.sleep(3)
 while True:
     try:
         highligted_word = driver.find_element_by_class_name("highlight").text
-        driver.find_element_by_id ("inputfield").send_keys(str(highligted_word) + " ")
-
         print(str(highligted_word))
     except:
-        print("You made a mistake!")
+        print("Cannot find any highlighted text!")
+
+    try:
+        driver.find_element_by_id ("inputfield").send_keys(str(highligted_word) + " ")
+    except:
+        print("Cannot send keystrokes to the browser!")

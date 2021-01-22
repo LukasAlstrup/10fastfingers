@@ -1,0 +1,4 @@
+[0122/171602.994:ERROR:process_reader_win.cc(123)] NtOpenThread: {Adgang nægtet} En proces har anmodet om adgang til et objekt, men har ikke fået disse rettigheder. (0xc0000022)
+[0122/171602.996:ERROR:exception_snapshot_win.cc(99)] thread ID 15196 not found in process
+[0122/171603.044:ERROR:process_reader_win.cc(123)] NtOpenThread: {Adgang nægtet} En proces har anmodet om adgang til et objekt, men har ikke fået disse rettigheder. (0xc0000022)
+[0122/171603.044:ERROR:exception_snapshot_win.cc(99)] thread ID 8764 not found in process

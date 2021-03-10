@@ -5,11 +5,16 @@ driver = webdriver.Chrome("chromedriver.exe")
 
 website = driver.get('https://10fastfingers.com/typing-test/english')
 
-time.sleep(3)
+time.sleep(10)
 
-allow_cookies = driver.find_element_by_id("CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll")
-allow_cookies.click()
-time.sleep(3)
+try:
+    allow_cookies = driver.find_element_by_id("CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll")
+    allow_cookies.click()
+except:
+    print("Cannot close, because it is not open")
+    
+    
+time.sleep(20)
 
 while True:
     try:
